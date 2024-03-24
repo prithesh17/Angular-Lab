@@ -1,0 +1,8 @@
+<h3>Array Data in the Node.js Server </h3>
+<div *ngFor="let obj of data">
+  <p>Name: {{ obj.name }} Age: {{ obj.age }}</p>
+</div>
+<h3>Enter data to push new object</h3>
+<label>Name : </label><input type="text"  placeholder="Enter name" #name>
+<label>Age : </label><input type="text"  placeholder="Enter age"  #age>
+<button (click)="putData(name.value, age.value)">Put Data</button>
